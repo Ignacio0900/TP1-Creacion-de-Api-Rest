@@ -1,0 +1,30 @@
+
+//Mostrar objetos
+GET http://localhost:3000/Juegos HTTP/1.1
+###
+
+//Agregar objetos
+POST http://localhost:3000/Juegos HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "God of War Ragnarök",
+    "author":"Eric Williams",
+    "year":"2022"
+
+}
+
+###
+
+//Editar objetos
+PUT http://localhost:3000/Juegos/7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "God of War 3",
+    "year":"2015"
+}
+
+###
+//Eliminar objetos
+DELETE http://localhost:3000/Juegos/8 HTTP/1.1
